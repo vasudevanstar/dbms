@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "pass123",
+    "phone": "1234567890",
+    "role": "customer",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "Vasudevan",
+    "email": "vasudevanstar12506@gmail.com",
+    "password": "12345",
+    "phone": "9629293354",
+    "role": "admin",
+    "isActive": true
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "rentalId": 1,
+    "amount": 140,
+    "method": "Credit Card",
+    "paidAt": "2026-03-18T17:23:38.352Z"
+  },
+  {
+    "id": 2,
+    "rentalId": 2,
+    "amount": 77,
+    "method": "Credit Card",
+    "paidAt": "2026-03-18T17:30:15.367Z"
+  }
+]

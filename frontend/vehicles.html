@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicles - FastRide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <i class="bi bi-car-front-fill" style="color: var(--accent-color);"></i> FastRide
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="history.html">History</a></li>
+        <li class="nav-item"><a class="nav-link" href="admin.html">Admin</a></li>
+        <li class="nav-item"><a class="nav-link btn-login" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5 pt-4 fade-in-scroll visible">
+  <h3 class="mb-4" style="font-weight: 700; color: var(--primary-color);">Available Vehicles</h3>
+  
+  <div class="filter-section">
+    <div class="row g-3 align-items-center">
+      <div class="col-md-3">
+        <div class="input-group">
+          <span class="input-group-text bg-white border-end-0"><i class="bi bi-search text-muted"></i></span>
+          <input type="text" id="searchInput" class="form-control border-start-0 ps-0" placeholder="Search model...">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <select id="typeFilter" class="form-select shadow-sm">
+          <option value="">🚗 All Types</option>
+          <option value="Sedan">Sedan</option>
+          <option value="SUV">SUV</option>
+          <option value="Sport">Sport</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <select id="availabilityFilter" class="form-select shadow-sm">
+          <option value="">✅ All Status</option>
+          <option value="Available">Available</option>
+          <option value="Booked">Booked</option>
+          <option value="Maintenance">Maintenance</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <input type="number" id="minPriceFilter" class="form-control shadow-sm" placeholder="Min price ($)">
+      </div>
+      <div class="col-md-2">
+        <input type="number" id="maxPriceFilter" class="form-control shadow-sm" placeholder="Max price ($)">
+      </div>
+      <div class="col-md-1">
+        <button id="filterBtn" class="btn btn-primary w-100 shadow-sm"><i class="bi bi-funnel"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div id="message" class="alert-container"></div>
+  
+  <div class="row g-4" id="vehiclesList"></div>
+  
+  <div class="d-flex justify-content-between align-items-center mt-5 mb-5 bg-white p-3 rounded-pill shadow-sm" style="max-width: 400px; margin-left: auto; margin-right: auto;">
+    <button id="prevPage" class="btn btn-outline-primary rounded-pill px-4"><i class="bi bi-chevron-left"></i> Prev</button>
+    <span id="pageInfo" class="fw-bold text-muted">Page 1</span>
+    <button id="nextPage" class="btn btn-outline-primary rounded-pill px-4">Next <i class="bi bi-chevron-right"></i></button>
+  </div>
+</div>
+
+<footer>
+  <div class="container text-center">
+    <h4 class="footer-heading"><i class="bi bi-car-front-fill" style="color: var(--accent-color);"></i> FastRide</h4>
+    <div class="social-icons my-3">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+    </div>
+    <div class="footer-bottom mt-2 pt-2 border-0">
+      <p>&copy; 2026 FastRide Car Rental.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

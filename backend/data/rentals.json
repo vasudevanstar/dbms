@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "customerEmail": "john@example.com",
+    "vehicleId": 1,
+    "startDate": "2026-03-19",
+    "endDate": "2026-03-20",
+    "days": 2,
+    "total_amount": 140,
+    "status": "Confirmed",
+    "createdAt": "2026-03-18T17:23:38.319Z"
+  },
+  {
+    "id": 2,
+    "customerEmail": "john@example.com",
+    "vehicleId": 1,
+    "startDate": "2026-03-21",
+    "endDate": "2026-03-21",
+    "days": 1,
+    "total_amount": 77,
+    "status": "Confirmed",
+    "createdAt": "2026-03-18T17:30:15.349Z"
+  }
+]
